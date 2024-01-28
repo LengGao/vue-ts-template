@@ -3,18 +3,59 @@
   "version": "1.0.0",
   "description": "vue ts template",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tubepack:dev": "tubepack",
+    "tubepack:sit": "tubepack",
+    "tubepack:uat": "tubepack",
+    "tubepack:pre": "tubepack",
+    "tubepack:prod": "tubepack",
+    "vite:dev": "vite",
+    "vite:sit": "vite",
+    "vite:uat": "vite",
+    "vite:pre": "vite",
+    "vite:prod": "vite",
+    "webpack:dev": "webpack",
+    "webpack:sit": "webpack",
+    "webpack:uat": "webpack",
+    "webpack:pre": "webpack",
+    "webpack:prod": "webpack",
+    "type:check": "vue-tec",
+    "lint:fix": "",
+    "lint:eslint": "eslint",
+    "lint:prettier": "prettier",
+    "lint:stylelint": "stylelint",
   },
-  "keywords": [],
-  "author": "",
+  "dependencies": {},
+  "devDependencies": {},
+  "keywords": ["vue-ts-template"],
+  "author": {
+    "name": "LengGao",
+    "email": "2448745034@qq.com",
+  },
   "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LengGao/vue-ts-template.git"
   },
   "bugs": {
-    "url": "https://github.com/LengGao/vue-ts-template/issues"
+    "url": "https://github.com/LengGao/vue-ts-template/issues",
+    "email": "lihaozecq@gmail.com"
   },
-  "homepage": "https://github.com/LengGao/vue-ts-template#readme"
+  "homepage": "https://github.com/LengGao/vue-ts-template#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "browserslist": {
+    "production": [
+      "> 1%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
