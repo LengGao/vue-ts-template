@@ -17,8 +17,9 @@ lerna-debug.log*
 *.sln
 *.sw?
 
-# other
+# ``other
 node_modules
 dist
 dist-ssr
+cache
 *.local

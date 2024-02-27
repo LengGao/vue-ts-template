@@ -5,16 +5,12 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "tubepack:dev": "tubepack",
-    "tubepack:sit": "tubepack",
-    "tubepack:uat": "tubepack",
-    "tubepack:pre": "tubepack",
-    "tubepack:prod": "tubepack",
-    "vite:dev": "vite",
-    "vite:sit": "vite",
-    "vite:uat": "vite",
-    "vite:pre": "vite",
-    "vite:prod": "vite",
+    "vite:dev": "vite --m dev --c build/vite/vite.config",
+    "vite:sit": "vite build --m sit --c build/vite/vite.config",
+    "vite:uat": "vite build --m uat --c build/vite/vite.config",
+    "vite:pre": "vite build --m pre --c build/vite/vite.config",
+    "vite:prod": "vite build --m prod --c build/vite/vite.config",
+    "vite:preview": "vite preview",
     "webpack:dev": "webpack",
     "webpack:sit": "webpack",
     "webpack:uat": "webpack",
@@ -25,11 +21,6 @@
     "lint:eslint": "eslint",
     "lint:prettier": "prettier",
     "lint:stylelint": "stylelint"
-  },
-  "dependencies": {
-    "pinia": "^2.1.7",
-    "vue": "^3.4.15",
-    "vue-router": "^4.2.5"
   },
   "keywords": [
     "vue-ts-template"
@@ -49,7 +40,7 @@
   },
   "homepage": "https://github.com/LengGao/vue-ts-template#readme",
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=18.19.0"
   },
   "browserslist": {
     "production": [
@@ -63,8 +54,25 @@
       "last 1 safari version"
     ]
   },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "echarts": "^5.5.0",
+    "mitt": "^3.0.1",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.1.7",
+    "pinia-plugin-persistedstate": "^3.2.1",
+    "vue": "^3.4.20",
+    "vue-router": "^4.3.0"
+  },
   "devDependencies": {
-    "unplugin-vue-setup-extend-plus": "^1.0.0",
-    "vite": "^5.0.12"
+    "@types/node": "^20.11.20",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "postcss-pxtorem": "^6.1.0",
+    "sass": "^1.71.1",
+    "unplugin-vue-setup-extend-plus": "^1.0.1",
+    "vite": "^5.1.4",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vue-tsc": "^1.8.27"
   }
 }

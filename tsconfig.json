@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // 指定 ECMAScript 目标版本
+    "module": "ESNext", // 指定模块系统
+    "outDir": "dist",
+    "baseUrl": "./", // 基础目录，用于解析相对路径
+    "paths": {"@/*": ["src/*"]},
+    "types": ["@types/node","vite/client"], // 手动指定的类型声明文件
+    "lib": ["DOM", "ESNext"], // 引入需要的库
+    
+    "skipLibCheck": true, // 忽略所有的声明文件（ *.d.ts）的类型检查
+    "isolatedModules": true, // 将每个文件作为单独的模块
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": false,
+    "useDefineForClassFields": true, // 使用[Define]来定义class fields
+    "experimentalDecorators": true, // 启用实验性的装饰器
+    "emitDecoratorMetadata": true, // 发射装饰器元数据
+
+    "jsx": "preserve",
+  },
+  "include": ["src/**/*.vue", "src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["dist", "node_modules"]
+}
